@@ -1,237 +1,1632 @@
-# Create a Bamboo Bottle Online Store Website
-
-Create a modern, attractive, eco-friendly, and fully responsive **Bamboo Bottle Online Shopping Website** using **HTML, CSS, and JavaScript**.
-
-## Website Name
-
-**BambooBliss – Eco-Friendly Bottles & Accessories**
-
-### 1. Header
-
-* Create a beautiful logo with a bamboo leaf and bottle icon.
-* Website name: BambooBliss.
-* Navigation menu: Home, Shop, Bamboo Bottles, Accessories, About Us, Contact.
-* Add a search bar to search products.
-* Add Login/Register buttons.
-* Add a shopping cart icon with a live cart counter.
-* Make the header sticky while scrolling.
-* Use a natural green, beige, and white color theme.
-
-### 2. Hero Image Slider
-
-Create an automatic image slider with attractive, high-quality bamboo bottle photos.
-
-Include these slides:
-
-* Slide 1: Premium Bamboo Water Bottles – “Stay Hydrated, Stay Natural.”
-* Slide 2: Eco-Friendly Bottles – “Choose a Greener Future.”
-* Slide 3: Bamboo Bottle Accessories – “Everything You Need in One Place.”
-
-Features:
-
-* Automatic sliding.
-* Previous and next buttons.
-* Slider indicators.
-* Responsive design for mobile and desktop.
-* Add a Shop Now button on every slide.
-
-### 3. Product Categories
-
-Display beautiful product cards with photos for these categories:
-
-* Bamboo Water Bottles
-* Stainless Steel Bamboo Bottles
-* Glass Bottles with Bamboo Covers
-* Insulated Bamboo Bottles
-* Kids' Bamboo Bottles
-* Bamboo Travel Bottles
-* Personalized Bamboo Bottles
-* Bamboo Bottle Gift Sets
-
-### 4. Accessories Section
-
-Include a complete collection of bamboo bottle accessories:
-
-* Replacement bamboo lids
-* Stainless steel caps
-* Leak-proof silicone seals
-* Replacement straws
-* Bottle cleaning brushes
-* Bottle carrying bags
-* Protective bottle sleeves
-* Bottle holders
-* Bottle straps
-* Bottle covers
-* Insulation pouches
-* Gift boxes
-* Spare gaskets
-* Bottle stands
-* Cleaning kits
-
-Every accessory should have a product image, name, price, short description, and Add to Cart button.
-
-### 5. Product Cards
-
-Each product card must include:
-
-* High-quality product image.
-* Product name.
-* Price in Indian rupees (₹).
-* Original price and discount, where applicable.
-* Star rating.
-* Short product description.
-* Product size and capacity.
-* Available colors and designs.
-* Add to Cart button.
-* Buy Now button.
-* Wishlist heart icon.
-
-Use sample product prices and clearly label them as demo prices.
-
-### 6. Special Offers Section
-
-Create an attractive promotional section featuring:
-
-* Buy 2 bottles and get a special discount.
-* Eco-friendly bottle combo packs.
-* Bottle and accessory gift sets.
-* Seasonal offers.
-* Best-selling products.
-* New arrivals.
-
-Include Shop Now buttons and promotional banners.
-
-### 7. Shopping Cart Functionality
-
-Use JavaScript to implement:
-
-* Add products to cart.
-* Remove products from cart.
-* Increase or decrease product quantities.
-* Automatically calculate subtotal and total.
-* Update the cart counter.
-* Show an empty-cart message.
-* Save cart contents in localStorage.
-* Display a checkout button.
-
-Create a demo checkout page or checkout modal. Do not collect real payment details.
-
-### 8. About Us Section
-
-Add an attractive section describing BambooBliss as an eco-conscious store offering reusable bamboo-style bottles and practical accessories.
-
-Highlight:
-
-* Reusable product choices.
-* Plastic-reduction awareness.
-* Stylish designs.
-* Convenient everyday hydration.
-* Thoughtful gift options.
-
-Avoid unsupported claims about product materials, sustainability certifications, or health benefits.
-
-### 9. Customer Reviews
-
-Display sample customer review cards with:
-
-* Customer name.
-* Star rating.
-* Short review.
-* Product purchased.
-
-Clearly treat reviews as demonstration content.
-
-### 10. Newsletter Section
-
-Add a newsletter subscription form with:
-
-* Email input.
-* Subscribe button.
-* JavaScript validation.
-* A success message after submission.
-
-### 11. Footer
-
-Create a complete footer with four columns:
-
-**Company**
-
-* About Us
-* Our Story
-* Contact Us
-
-**Shop**
-
-* All Bottles
-* Bottle Accessories
-* Best Sellers
-* Special Offers
-
-**Customer Support**
-
-* FAQs
-* Shipping Information
-* Returns and Refunds
-* Order Tracking
-
-**Follow Us**
-
-* Instagram
-* Facebook
-* YouTube
-* Pinterest
-
-Also include:
-
-* Email address and phone placeholders.
-* Privacy Policy.
-* Terms and Conditions.
-* Copyright notice.
-* Payment method icons for display only.
-
-### 12. Design and Colors
-
-Use:
-
-* Forest green: #245C3A
-* Bamboo beige: #E8D8B5
-* Cream white: #FAF8F0
-* Leaf green: #75A85A
-* Dark text: #26352B
-
-Design style:
-
-* Modern and minimal.
-* Nature-inspired layout.
-* Rounded product cards.
-* Soft shadows.
-* Smooth hover animations.
-* Attractive typography.
-* High-quality product photos.
-* Mobile-friendly navigation.
-
-### 13. Technical Requirements
-
-Use separate files:
-
-1. `index.html` – Website structure.
-2. `style.css` – Styling and responsive design.
-3. `script.js` – Slider, cart, search, filters, wishlist, and form validation.
-
-Requirements:
-
-* Use semantic HTML5.
-* Use modern CSS Flexbox and Grid.
-* Use vanilla JavaScript without requiring a framework.
-* Add real product images from reliable image URLs.
-* Ensure all buttons have working demo interactions.
-* Implement product search and category filters.
-* Make the slider work automatically and manually.
-* Add a mobile hamburger menu.
-* Use localStorage for cart persistence.
-* Add accessible labels and image alt text.
-* Include comments in the code.
-* Ensure there are no JavaScript errors.
-* Make the website easy to deploy on Vercel.
-
-**Final result:** Build a complete, visually appealing, responsive BambooBliss online store with a header, image slider, product catalog, accessories, shopping cart, offers, customer reviews, newsletter, and footer using HTML, CSS, and JavaScript.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BambooBliss – Eco-Friendly Bottles & Accessories</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: '#245C3A',
+                        'forest-dark': '#1a452b',
+                        beige: '#E8D8B5',
+                        'beige-light': '#F6F0E2',
+                        cream: '#FAF8F0',
+                        leaf: '#75A85A',
+                        darkText: '#26352B',
+                        accent: '#D4A373'
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #FAF8F0;
+            color: #26352B;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF8F0;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #245C3A;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1a452b;
+        }
+
+        /* Glassmorphism Header */
+        .glass-header {
+            background: rgba(250, 248, 240, 0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        /* Badge Glow & Custom Shadow */
+        .card-shadow {
+            box-shadow: 0 10px 25px -5px rgba(36, 92, 58, 0.08), 0 8px 10px -6px rgba(36, 92, 58, 0.04);
+        }
+        .card-shadow:hover {
+            box-shadow: 0 20px 30px -10px rgba(36, 92, 58, 0.15), 0 10px 15px -5px rgba(36, 92, 58, 0.08);
+        }
+
+        /* Hero Slider Transitions */
+        .slide-item {
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+            pointer-events: none;
+        }
+        .slide-item.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* Notification Toast Animation */
+        @keyframes slideInRight {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        .toast-animate {
+            animation: slideInRight 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        /* Hide scrollbars for clean slider lists */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen relative selection:bg-leaf selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-forest text-cream text-xs md:text-sm py-2 px-4 text-center font-medium flex justify-between items-center z-50">
+        <div class="hidden md:flex items-center gap-2">
+            <i class="fa-solid fa-leaf text-leaf"></i>
+            <span>100% Sustainable & Plastic-Free Hydration</span>
+        </div>
+        <div class="mx-auto md:mx-0">
+            🌱 Special Offer: Get 15% OFF on orders over ₹1,499 | Code: <span class="text-beige font-bold uppercase tracking-wider">ECOBLISS</span>
+        </div>
+        <div class="hidden md:flex items-center gap-4 text-xs text-beige">
+            <span><i class="fa-solid fa-truck-fast mr-1"></i> Free Shipping India-wide</span>
+            <span><i class="fa-solid fa-headset mr-1"></i> Support 24/7</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-40 glass-header border-b border-beige/40 transition-all duration-300" id="mainHeader">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-full bg-forest text-beige flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
+                        <span class="text-xl flex items-center">
+                            <i class="fa-solid fa-wine-bottle text-beige transform -rotate-12"></i>
+                            <i class="fa-solid fa-leaf text-leaf -ml-2 -mt-2 text-sm"></i>
+                        </span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-serif text-2xl font-bold tracking-tight text-forest leading-none">BambooBliss</span>
+                        <span class="text-[10px] tracking-widest text-forest/70 uppercase font-semibold">Eco-Bottles & Accessories</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-darkText">
+                    <a href="#home" class="hover:text-forest transition-colors py-1 border-b-2 border-transparent hover:border-forest active">Home</a>
+                    <a href="#categories" class="hover:text-forest transition-colors py-1 border-b-2 border-transparent hover:border-forest">Shop</a>
+                    <a href="#products" class="hover:text-forest transition-colors py-1 border-b-2 border-transparent hover:border-forest">Bamboo Bottles</a>
+                    <a href="#accessories" class="hover:text-forest transition-colors py-1 border-b-2 border-transparent hover:border-forest">Accessories</a>
+                    <a href="#about" class="hover:text-forest transition-colors py-1 border-b-2 border-transparent hover:border-forest">About Us</a>
+                    <a href="#contact" class="hover:text-forest transition-colors py-1 border-b-2 border-transparent hover:border-forest">Contact</a>
+                </nav>
+
+                <!-- Search Bar -->
+                <div class="hidden md:flex items-center relative w-64">
+                    <input type="text" id="searchInput" onkeyup="handleSearch()" placeholder="Search bottles, caps, straws..." 
+                        class="w-full bg-beige-light/70 text-darkText text-sm rounded-full pl-4 pr-10 py-2 border border-beige focus:outline-none focus:border-forest focus:ring-1 focus:ring-forest transition-all placeholder:text-gray-500">
+                    <button class="absolute right-3 text-forest/70 hover:text-forest">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <!-- Search Results Dropdown -->
+                    <div id="searchResults" class="hidden absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-2xl border border-beige/60 overflow-hidden z-50 max-h-80 overflow-y-auto"></div>
+                </div>
+
+                <!-- Right Action Buttons -->
+                <div class="flex items-center gap-3 sm:gap-4">
+                    <!-- Login Button -->
+                    <button onclick="openModal('authModal')" class="hidden sm:flex items-center gap-2 text-sm font-semibold text-forest hover:bg-forest/10 px-3 py-2 rounded-xl transition-colors">
+                        <i class="fa-regular fa-user text-lg"></i>
+                        <span>Login</span>
+                    </button>
+
+                    <!-- Wishlist Icon -->
+                    <button onclick="toggleWishlistDrawer()" class="relative p-2 text-darkText hover:text-forest transition-colors" title="Wishlist">
+                        <i class="fa-regular fa-heart text-xl"></i>
+                        <span id="wishlistCount" class="absolute top-0 right-0 bg-leaf text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">0</span>
+                    </button>
+
+                    <!-- Cart Icon Button -->
+                    <button onclick="toggleCartDrawer()" class="relative p-2.5 bg-forest text-cream rounded-full hover:bg-forest-dark transition-all shadow-md flex items-center justify-center group" title="Cart">
+                        <i class="fa-solid fa-basket-shopping text-base group-hover:scale-110 transition-transform"></i>
+                        <span id="cartCounter" class="absolute -top-1 -right-1 bg-amber-500 text-white text-[10px] font-black w-5 h-5 rounded-full flex items-center justify-center border-2 border-cream">0</span>
+                    </button>
+
+                    <!-- Mobile Menu Button -->
+                    <button onclick="toggleMobileMenu()" class="lg:hidden p-2 text-forest text-xl focus:outline-none">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Search Bar (under header on small screens) -->
+        <div class="md:hidden px-4 pb-3">
+            <div class="relative w-full">
+                <input type="text" id="mobileSearchInput" onkeyup="handleMobileSearch()" placeholder="Search products & accessories..." 
+                    class="w-full bg-beige-light/80 text-darkText text-sm rounded-xl pl-4 pr-10 py-2 border border-beige focus:outline-none focus:border-forest">
+                <i class="fa-solid fa-magnifying-glass absolute right-3 top-2.5 text-forest/70"></i>
+            </div>
+            <div id="mobileSearchResults" class="hidden mt-1 bg-white rounded-xl shadow-xl border border-beige overflow-hidden max-h-60 overflow-y-auto"></div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-cream border-b border-beige px-6 py-4 flex flex-col gap-3 font-medium text-darkText">
+            <a href="#home" onclick="toggleMobileMenu()" class="py-2 border-b border-beige/40 flex items-center justify-between">
+                <span>Home</span> <i class="fa-solid fa-chevron-right text-xs text-forest"></i>
+            </a>
+            <a href="#categories" onclick="toggleMobileMenu()" class="py-2 border-b border-beige/40 flex items-center justify-between">
+                <span>Shop Categories</span> <i class="fa-solid fa-chevron-right text-xs text-forest"></i>
+            </a>
+            <a href="#products" onclick="toggleMobileMenu()" class="py-2 border-b border-beige/40 flex items-center justify-between">
+                <span>Bamboo Bottles</span> <i class="fa-solid fa-chevron-right text-xs text-forest"></i>
+            </a>
+            <a href="#accessories" onclick="toggleMobileMenu()" class="py-2 border-b border-beige/40 flex items-center justify-between">
+                <span>Accessories</span> <i class="fa-solid fa-chevron-right text-xs text-forest"></i>
+            </a>
+            <a href="#offers" onclick="toggleMobileMenu()" class="py-2 border-b border-beige/40 flex items-center justify-between text-amber-700 font-semibold">
+                <span>Special Deals</span> <i class="fa-solid fa-tags text-xs"></i>
+            </a>
+            <a href="#about" onclick="toggleMobileMenu()" class="py-2 border-b border-beige/40 flex items-center justify-between">
+                <span>About Us</span> <i class="fa-solid fa-chevron-right text-xs text-forest"></i>
+            </a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="py-2 border-b border-beige/40 flex items-center justify-between">
+                <span>Contact</span> <i class="fa-solid fa-chevron-right text-xs text-forest"></i>
+            </a>
+            <div class="pt-2 flex items-center justify-between">
+                <button onclick="toggleMobileMenu(); openModal('authModal')" class="w-full bg-forest text-cream font-semibold py-2.5 rounded-xl shadow">
+                    <i class="fa-regular fa-user mr-2"></i> Account Login / Register
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section Slider -->
+        <section id="home" class="relative overflow-hidden bg-gradient-to-b from-beige-light/50 to-cream py-8 md:py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="relative h-[480px] sm:h-[520px] md:h-[560px] rounded-3xl overflow-hidden shadow-2xl bg-forest">
+                    
+                    <!-- Slide 1 -->
+                    <div class="slide-item active absolute inset-0 flex items-center">
+                        <img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=1200&auto=format&fit=crop" alt="Premium Bamboo Bottles" class="absolute inset-0 w-full h-full object-cover object-center brightness-75">
+                        <div class="absolute inset-0 bg-gradient-to-r from-forest-dark/90 via-forest-dark/50 to-transparent"></div>
+                        <div class="relative max-w-2xl px-6 sm:px-12 md:px-16 text-white space-y-4 sm:space-y-6">
+                            <span class="inline-block px-3.5 py-1 bg-leaf/90 text-white rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">Eco Collection 2026</span>
+                            <h1 class="font-serif text-3xl sm:text-5xl md:text-6xl font-bold leading-tight">Stay Hydrated, <br><span class="text-beige italic">Stay Natural.</span></h1>
+                            <p class="text-beige-light text-sm sm:text-base md:text-lg max-w-lg leading-relaxed">
+                                Discover our signature natural bamboo insulated water bottles designed to keep your drinks hot for 12 hours or cold for 24 hours.
+                            </p>
+                            <div class="pt-2 flex flex-wrap gap-4">
+                                <a href="#products" class="bg-beige text-forest-dark font-bold px-7 py-3.5 rounded-full hover:bg-white hover:scale-105 transition-all shadow-lg flex items-center gap-2 text-sm sm:text-base">
+                                    <span>Shop Now</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                                <a href="#about" class="border-2 border-white/80 text-white hover:bg-white/10 font-medium px-6 py-3.5 rounded-full transition-all text-sm sm:text-base">
+                                    Our Sustainability Story
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slide-item absolute inset-0 flex items-center">
+                        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=1200&auto=format&fit=crop" alt="Eco Friendly Future" class="absolute inset-0 w-full h-full object-cover object-center brightness-75">
+                        <div class="absolute inset-0 bg-gradient-to-r from-forest-dark/90 via-forest-dark/50 to-transparent"></div>
+                        <div class="relative max-w-2xl px-6 sm:px-12 md:px-16 text-white space-y-4 sm:space-y-6">
+                            <span class="inline-block px-3.5 py-1 bg-amber-600 text-white rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">Zero Plastic</span>
+                            <h2 class="font-serif text-3xl sm:text-5xl md:text-6xl font-bold leading-tight">Choose a <br><span class="text-leaf italic">Greener Future.</span></h2>
+                            <p class="text-beige-light text-sm sm:text-base md:text-lg max-w-lg leading-relaxed">
+                                Replace single-use plastics with handcrafted bamboo finish glass and stainless steel tumblers. Elegant, reusable, and built for life.
+                            </p>
+                            <div class="pt-2">
+                                <a href="#products" class="bg-leaf text-white font-bold px-7 py-3.5 rounded-full hover:bg-emerald-600 hover:scale-105 transition-all shadow-lg flex items-center gap-2 text-sm sm:text-base inline-flex">
+                                    <span>Explore Collection</span>
+                                    <i class="fa-solid fa-leaf"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="slide-item absolute inset-0 flex items-center">
+                        <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=1200&auto=format&fit=crop" alt="Bamboo Bottle Accessories" class="absolute inset-0 w-full h-full object-cover object-center brightness-75">
+                        <div class="absolute inset-0 bg-gradient-to-r from-forest-dark/90 via-forest-dark/50 to-transparent"></div>
+                        <div class="relative max-w-2xl px-6 sm:px-12 md:px-16 text-white space-y-4 sm:space-y-6">
+                            <span class="inline-block px-3.5 py-1 bg-amber-700 text-white rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">Accessories Hub</span>
+                            <h2 class="font-serif text-3xl sm:text-5xl md:text-6xl font-bold leading-tight">Everything You Need <br><span class="text-beige italic">In One Place.</span></h2>
+                            <p class="text-beige-light text-sm sm:text-base md:text-lg max-w-lg leading-relaxed">
+                                From eco coconut bristle brushes and bamboo replacement caps to neoprene protective sleeves and organic cotton carry bags.
+                            </p>
+                            <div class="pt-2">
+                                <a href="#accessories" class="bg-beige text-forest-dark font-bold px-7 py-3.5 rounded-full hover:bg-white hover:scale-105 transition-all shadow-lg flex items-center gap-2 text-sm sm:text-base inline-flex">
+                                    <span>View All Accessories</span>
+                                    <i class="fa-solid fa-gear"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slider Nav Buttons -->
+                    <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-md text-white hover:bg-white/40 transition-all flex items-center justify-center border border-white/30 z-10" aria-label="Previous Slide">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/20 backdrop-blur-md text-white hover:bg-white/40 transition-all flex items-center justify-center border border-white/30 z-10" aria-label="Next Slide">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                    <!-- Indicators -->
+                    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-3 z-10" id="sliderDots">
+                        <button onclick="goToSlide(0)" class="w-8 h-2 rounded-full bg-white transition-all"></button>
+                        <button onclick="goToSlide(1)" class="w-2.5 h-2 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+                        <button onclick="goToSlide(2)" class="w-2.5 h-2 rounded-full bg-white/50 hover:bg-white transition-all"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features Bar -->
+        <section class="py-6 bg-beige/30 border-y border-beige/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div class="flex flex-col items-center p-2">
+                        <div class="w-12 h-12 rounded-2xl bg-forest/10 text-forest flex items-center justify-center text-xl mb-2">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <h4 class="font-bold text-sm text-darkText">100% Organic Bamboo</h4>
+                        <p class="text-xs text-gray-600">Sustainably harvested wood</p>
+                    </div>
+                    <div class="flex flex-col items-center p-2">
+                        <div class="w-12 h-12 rounded-2xl bg-forest/10 text-forest flex items-center justify-center text-xl mb-2">
+                            <i class="fa-solid fa-temperature-arrow-down"></i>
+                        </div>
+                        <h4 class="font-bold text-sm text-darkText">Thermal Insulation</h4>
+                        <p class="text-xs text-gray-600">24h Cold & 12h Hot retention</p>
+                    </div>
+                    <div class="flex flex-col items-center p-2">
+                        <div class="w-12 h-12 rounded-2xl bg-forest/10 text-forest flex items-center justify-center text-xl mb-2">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h4 class="font-bold text-sm text-darkText">BPA Free & Leak Proof</h4>
+                        <p class="text-xs text-gray-600">Safe, non-toxic materials</p>
+                    </div>
+                    <div class="flex flex-col items-center p-2">
+                        <div class="w-12 h-12 rounded-2xl bg-forest/10 text-forest flex items-center justify-center text-xl mb-2">
+                            <i class="fa-solid fa-rotate-left"></i>
+                        </div>
+                        <h4 class="font-bold text-sm text-darkText">30 Days Easy Return</h4>
+                        <p class="text-xs text-gray-600">Hassle-free demo warranty</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Categories Section -->
+        <section id="categories" class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-xs font-bold text-forest uppercase tracking-widest bg-forest/10 px-3 py-1 rounded-full">Curated Collections</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest mt-3">Explore Product Categories</h2>
+                    <p class="text-gray-600 text-sm sm:text-base mt-2">Find the perfect eco-friendly hydration companion designed for work, gym, travel, and home.</p>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6" id="categoriesGrid">
+                    <!-- Categories dynamically generated in JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Products Catalog -->
+        <section id="products" class="py-16 bg-gradient-to-b from-cream to-beige-light/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                    <div>
+                        <span class="text-xs font-bold text-forest uppercase tracking-widest bg-forest/10 px-3 py-1 rounded-full">Our Best Sellers</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest mt-2">Premium Bamboo Water Bottles</h2>
+                        <p class="text-gray-600 text-sm mt-1">Crafted with precision, sustainable bamboo, and food-grade stainless steel/glass.</p>
+                    </div>
+
+                    <!-- Category Filter Buttons -->
+                    <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-2 pt-1" id="filterTabs">
+                        <button onclick="filterProducts('all')" class="filter-btn active bg-forest text-cream px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap shadow-sm transition-all">All Bottles</button>
+                        <button onclick="filterProducts('Water Bottles')" class="filter-btn bg-white text-darkText hover:bg-beige border border-beige px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all">Pure Bamboo</button>
+                        <button onclick="filterProducts('Stainless Steel')" class="filter-btn bg-white text-darkText hover:bg-beige border border-beige px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all">Stainless Steel</button>
+                        <button onclick="filterProducts('Glass Covers')" class="filter-btn bg-white text-darkText hover:bg-beige border border-beige px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all">Glass & Bamboo</button>
+                        <button onclick="filterProducts('Insulated')" class="filter-btn bg-white text-darkText hover:bg-beige border border-beige px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-all">Insulated</button>
+                    </div>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="productsGrid">
+                    <!-- Javascript populates product cards here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offers Section -->
+        <section id="offers" class="py-16 bg-forest text-cream relative overflow-hidden">
+            <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-leaf/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="bg-amber-500 text-forest font-extrabold text-xs px-3 py-1 rounded-full uppercase tracking-wider">Limited Time Deals</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-beige mt-3">Exclusive Eco Bundles & Offers</h2>
+                    <p class="text-beige-light/80 text-sm mt-2">Save more when you adopt a full plastic-free lifestyle with our popular combo sets.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Offer 1 -->
+                    <div class="bg-forest-dark/80 border border-beige/20 rounded-3xl p-6 flex flex-col justify-between hover:border-beige/50 transition-all card-shadow">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="bg-amber-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg">Buy 2 Get 15% OFF</span>
+                                <i class="fa-solid fa-gift text-2xl text-beige"></i>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-white mb-2">Duo Hydration Pack</h3>
+                            <p class="text-xs text-beige-light/80 mb-4">Pair any 2 Insulated Bamboo Bottles and receive an instant 15% discount applied at checkout.</p>
+                            <ul class="text-xs text-beige-light space-y-1.5 mb-6">
+                                <li><i class="fa-solid fa-check text-leaf mr-2"></i> Free Custom Laser Engraving</li>
+                                <li><i class="fa-solid fa-check text-leaf mr-2"></i> Free Cotton Carry Bag Included</li>
+                            </ul>
+                        </div>
+                        <button onclick="applyOffer('DUO15')" class="w-full bg-beige text-forest-dark font-bold py-3 rounded-xl hover:bg-white transition-all text-sm">
+                            Claim Offer Code: DUO15
+                        </button>
+                    </div>
+
+                    <!-- Offer 2 -->
+                    <div class="bg-gradient-to-b from-amber-900/40 to-forest-dark/90 border-2 border-amber-500/50 rounded-3xl p-6 flex flex-col justify-between card-shadow relative scale-105 my-2 md:my-0">
+                        <div class="absolute -top-3 right-6 bg-amber-500 text-forest-dark text-[11px] font-black uppercase tracking-wider px-3 py-0.5 rounded-full shadow">BEST SELLER</div>
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="bg-emerald-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg">SAVE ₹499</span>
+                                <i class="fa-solid fa-box-open text-2xl text-amber-400"></i>
+                            </div>
+                            <h3 class="font-serif text-2xl font-bold text-amber-200 mb-2">Zero-Waste Deluxe Gift Box</h3>
+                            <p class="text-xs text-beige-light/80 mb-4">Includes 1 Insulated Bottle (750ml), 2 Bamboo Straws, 1 Coconut Brush, and 1 Neoprene Sleeve.</p>
+                            <div class="flex items-baseline gap-2 mb-6">
+                                <span class="text-2xl font-bold text-white">₹1,899</span>
+                                <span class="text-sm line-through text-beige-light/50">₹2,398</span>
+                                <span class="text-xs text-emerald-400 font-bold">(20% OFF)</span>
+                            </div>
+                        </div>
+                        <button onclick="quickAddToCart(7)" class="w-full bg-amber-500 text-forest-dark font-bold py-3 rounded-xl hover:bg-amber-400 transition-all text-sm shadow-lg">
+                            Add Gift Bundle to Cart
+                        </button>
+                    </div>
+
+                    <!-- Offer 3 -->
+                    <div class="bg-forest-dark/80 border border-beige/20 rounded-3xl p-6 flex flex-col justify-between hover:border-beige/50 transition-all card-shadow">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="bg-leaf text-white text-xs font-bold px-2.5 py-1 rounded-lg">Corporate Bulk</span>
+                                <i class="fa-solid fa-building text-2xl text-beige"></i>
+                            </div>
+                            <h3 class="font-serif text-xl font-bold text-white mb-2">Custom Logo Gifting</h3>
+                            <p class="text-xs text-beige-light/80 mb-4">Planning corporate gifts or event favors? Order 25+ bottles with your company logo engraved for up to 35% discount.</p>
+                            <ul class="text-xs text-beige-light space-y-1.5 mb-6">
+                                <li><i class="fa-solid fa-check text-leaf mr-2"></i> Free Digital Mockups</li>
+                                <li><i class="fa-solid fa-check text-leaf mr-2"></i> Custom Eco Gift Packaging</li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="w-full bg-transparent border border-beige text-beige hover:bg-beige hover:text-forest-dark font-bold py-3 rounded-xl transition-all text-sm text-center block">
+                            Request Corporate Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Complete Accessories Section -->
+        <section id="accessories" class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+                    <div>
+                        <span class="text-xs font-bold text-forest uppercase tracking-widest bg-forest/10 px-3 py-1 rounded-full">Spare Parts & Extras</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest mt-2">Bamboo Bottle Accessories</h2>
+                        <p class="text-gray-600 text-sm mt-1">Keep your favorite bottle in top shape forever with our range of caps, seals, brushes, and carry cases.</p>
+                    </div>
+                    <div class="mt-4 md:mt-0 text-xs font-semibold text-forest flex items-center gap-1">
+                        <span>Showing 15 Accessories</span>
+                        <i class="fa-solid fa-check-circle text-leaf"></i>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4" id="accessoriesGrid">
+                    <!-- Javascript populates 15 accessories cards here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 bg-beige-light/40 border-y border-beige/60">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="relative">
+                        <div class="relative h-96 sm:h-[450px] rounded-3xl overflow-hidden shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1000&auto=format&fit=crop" alt="Bamboo Forest & Eco Lifestyle" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 bg-forest text-cream p-6 rounded-3xl shadow-xl hidden sm:block max-w-xs border-2 border-beige/30">
+                            <i class="fa-solid fa-quote-left text-2xl text-leaf mb-2"></i>
+                            <p class="text-xs font-medium text-beige-light">"Small daily choices lead to massive environmental transformation. Every reusable bottle replaces hundreds of plastic ones."</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <span class="text-xs font-bold text-forest uppercase tracking-widest bg-forest/10 px-3 py-1 rounded-full">Our Story & Mission</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest leading-tight">Crafting Sustainable Hydration for Everyday Conscious Living</h2>
+                        <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
+                            At <strong>BambooBliss</strong>, we believe functional products should exist in harmony with nature. Our reusable bamboo-wrapped bottles and practical accessories are designed to bring organic warmth, durability, and style to your daily hydration routine.
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-4 pt-2">
+                            <div class="p-4 bg-white rounded-2xl border border-beige shadow-sm">
+                                <i class="fa-solid fa-recycle text-xl text-leaf mb-2"></i>
+                                <h4 class="font-bold text-sm text-forest">Reusable Choice</h4>
+                                <p class="text-xs text-gray-600 mt-1">Durable construction engineered for years of everyday use.</p>
+                            </div>
+                            <div class="p-4 bg-white rounded-2xl border border-beige shadow-sm">
+                                <i class="fa-solid fa-earth-americas text-xl text-leaf mb-2"></i>
+                                <h4 class="font-bold text-sm text-forest">Plastic Reduction</h4>
+                                <p class="text-xs text-gray-600 mt-1">Empowering individuals to drastically cut single-use plastic reliance.</p>
+                            </div>
+                            <div class="p-4 bg-white rounded-2xl border border-beige shadow-sm">
+                                <i class="fa-solid fa-wand-magic-sparkles text-xl text-leaf mb-2"></i>
+                                <h4 class="font-bold text-sm text-forest">Stylish Aesthetic</h4>
+                                <p class="text-xs text-gray-600 mt-1">Unique natural bamboo wood grain patterns on every single piece.</p>
+                            </div>
+                            <div class="p-4 bg-white rounded-2xl border border-beige shadow-sm">
+                                <i class="fa-solid fa-gift text-xl text-leaf mb-2"></i>
+                                <h4 class="font-bold text-sm text-forest">Thoughtful Gifting</h4>
+                                <p class="text-xs text-gray-600 mt-1">Eco-friendly gift items for birthdays, festive occasions, and corporate events.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Reviews Section -->
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-xs font-bold text-forest uppercase tracking-widest bg-forest/10 px-3 py-1 rounded-full">Community Feedback</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest mt-3">Loved by Conscious Drinkers</h2>
+                    <p class="text-gray-600 text-sm mt-2">Read real experiences from thousands of happy eco-conscious customers across India.</p>
+                    <p class="text-[11px] text-gray-400 italic mt-1">* Demonstrational review entries</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Review 1 -->
+                    <div class="bg-white p-6 rounded-3xl border border-beige shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-1 text-amber-500 mb-3">
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                            </div>
+                            <p class="text-xs sm:text-sm text-gray-700 italic leading-relaxed mb-4">
+                                "The bamboo finish looks extremely classy in meetings! Water stays ice cold all day during hot summer site visits. Absolutely worth every rupee."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+                            <div class="w-10 h-10 rounded-full bg-forest/20 text-forest font-bold flex items-center justify-center text-sm">
+                                AR
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-darkText">Ananya Roy</h4>
+                                <span class="text-[11px] text-gray-500">Purchased: Insulated Bamboo Bottle 750ml</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="bg-white p-6 rounded-3xl border border-beige shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-1 text-amber-500 mb-3">
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                            </div>
+                            <p class="text-xs sm:text-sm text-gray-700 italic leading-relaxed mb-4">
+                                "Bought the gift bundle for my sister. The packaging was plastic-free and biodegradable. The coconut cleaning brush works like a charm!"
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+                            <div class="w-10 h-10 rounded-full bg-leaf/20 text-forest font-bold flex items-center justify-center text-sm">
+                                VK
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-darkText">Vikram Kulkarni</h4>
+                                <span class="text-[11px] text-gray-500">Purchased: Bamboo Gift Set</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="bg-white p-6 rounded-3xl border border-beige shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-1 text-amber-500 mb-3">
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star text-sm"></i>
+                                <i class="fa-solid fa-star-half-stroke text-sm"></i>
+                            </div>
+                            <p class="text-xs sm:text-sm text-gray-700 italic leading-relaxed mb-4">
+                                "Great leak-proof cap with smooth silicone seal. Fits perfectly in my car cup holder and backpack side pocket. Highly recommended!"
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+                            <div class="w-10 h-10 rounded-full bg-amber-200 text-amber-800 font-bold flex items-center justify-center text-sm">
+                                PM
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-darkText">Priya Mehta</h4>
+                                <span class="text-[11px] text-gray-500">Purchased: Glass Bottle w/ Bamboo Sleeve</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="py-14 bg-forest text-cream">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-forest-dark border border-beige/30 rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden card-shadow">
+                    <div class="max-w-2xl mx-auto space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-leaf/20 text-leaf mx-auto flex items-center justify-center text-2xl">
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </div>
+                        <h2 class="font-serif text-2xl sm:text-4xl font-bold text-beige">Join Our Eco Movement</h2>
+                        <p class="text-xs sm:text-base text-beige-light/80">
+                            Subscribe to receive exclusive sustainability tips, new eco-accessory product drops, and 10% off your first demo order!
+                        </p>
+                        <form id="newsletterForm" onsubmit="handleNewsletter(event)" class="pt-4 flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                            <input type="email" id="newsletterEmail" placeholder="Enter your email address..." required 
+                                class="flex-grow bg-cream text-darkText text-sm rounded-xl px-4 py-3 border border-beige focus:outline-none focus:ring-2 focus:ring-leaf">
+                            <button type="submit" class="bg-leaf hover:bg-emerald-600 text-white font-bold px-6 py-3 rounded-xl transition-all text-sm whitespace-nowrap shadow-md">
+                                Subscribe Now
+                            </button>
+                        </form>
+                        <div id="newsletterMessage" class="hidden text-xs text-emerald-300 font-semibold pt-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-darkText text-cream pt-16 pb-8 border-t border-forest/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+                
+                <!-- Brand Column -->
+                <div class="lg:col-span-2 space-y-4">
+                    <a href="#home" class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-forest text-beige flex items-center justify-center">
+                            <i class="fa-solid fa-wine-bottle text-beige"></i>
+                        </div>
+                        <span class="font-serif text-2xl font-bold tracking-tight text-beige">BambooBliss</span>
+                    </a>
+                    <p class="text-xs text-gray-300 leading-relaxed max-w-sm">
+                        Empowering eco-conscious lifestyles with premium bamboo water bottles, travel tumblers, and sustainable maintenance accessories across India.
+                    </p>
+                    <div class="pt-2 text-xs space-y-2 text-gray-300">
+                        <p class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-leaf"></i> 102 Eco Park Way, Green Valley, India</p>
+                        <p class="flex items-center gap-2"><i class="fa-solid fa-envelope text-leaf"></i> support@bamboobliss.demo</p>
+                        <p class="flex items-center gap-2"><i class="fa-solid fa-phone text-leaf"></i> +91 (800) 555-0199</p>
+                    </div>
+                </div>
+
+                <!-- Column 1: Company -->
+                <div class="space-y-3">
+                    <h4 class="font-serif text-base font-bold text-beige">Company</h4>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li><a href="#about" class="hover:text-leaf transition-colors">About Us</a></li>
+                        <li><a href="#about" class="hover:text-leaf transition-colors">Our Sustainability Story</a></li>
+                        <li><a href="#contact" class="hover:text-leaf transition-colors">Contact Us</a></li>
+                        <li><a href="#about" class="hover:text-leaf transition-colors">Careers at Bliss</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: Shop -->
+                <div class="space-y-3">
+                    <h4 class="font-serif text-base font-bold text-beige">Shop Catalog</h4>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li><a href="#products" class="hover:text-leaf transition-colors">All Bamboo Bottles</a></li>
+                        <li><a href="#accessories" class="hover:text-leaf transition-colors">Bottle Accessories</a></li>
+                        <li><a href="#products" class="hover:text-leaf transition-colors">Best Sellers</a></li>
+                        <li><a href="#offers" class="hover:text-leaf transition-colors">Special Combo Deals</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Customer Support -->
+                <div class="space-y-3">
+                    <h4 class="font-serif text-base font-bold text-beige">Support</h4>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li><a href="javascript:void(0)" onclick="alert('Demo FAQ: All products ship plastic-free within 2-4 business days.')" class="hover:text-leaf transition-colors">FAQs</a></li>
+                        <li><a href="javascript:void(0)" onclick="alert('Demo Info: Free shipping on orders over ₹999 across all Indian pin codes.')" class="hover:text-leaf transition-colors">Shipping Info</a></li>
+                        <li><a href="javascript:void(0)" onclick="alert('Demo Policy: 30-day hassle free replacement for damaged transit items.')" class="hover:text-leaf transition-colors">Returns & Refunds</a></li>
+                        <li><a href="javascript:void(0)" onclick="openModal('orderTrackModal')" class="hover:text-leaf transition-colors">Order Tracking</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Row -->
+            <div class="pt-8 border-t border-gray-700 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-400">
+                <div>
+                    <p>&copy; 2026 BambooBliss. All Rights Reserved. Designed for a greener future.</p>
+                </div>
+
+                <!-- Social Links -->
+                <div class="flex items-center gap-4 text-base">
+                    <a href="https://instagram.com" target="_blank" rel="noopener" class="text-gray-400 hover:text-amber-400 transition-colors" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener" class="text-gray-400 hover:text-amber-400 transition-colors" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener" class="text-gray-400 hover:text-amber-400 transition-colors" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://pinterest.com" target="_blank" rel="noopener" class="text-gray-400 hover:text-amber-400 transition-colors" title="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+
+                <!-- Payment Method Display Icons -->
+                <div class="flex items-center gap-3 text-lg text-gray-300" title="Accepted Demo Payment Methods">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-google-pay"></i>
+                    <i class="fa-solid fa-qrcode"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Slide-Over Drawer -->
+    <div id="cartDrawer" class="fixed inset-0 z-50 overflow-hidden hidden">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm transition-opacity" onclick="toggleCartDrawer()"></div>
+        <div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+            <div class="w-screen max-w-md bg-cream shadow-2xl flex flex-col">
+                <!-- Cart Header -->
+                <div class="p-6 bg-forest text-cream flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-basket-shopping text-xl text-beige"></i>
+                        <h3 class="font-serif text-lg font-bold">Your Cart</h3>
+                        <span id="cartDrawerCount" class="bg-amber-500 text-forest text-xs font-bold px-2 py-0.5 rounded-full">0 items</span>
+                    </div>
+                    <button onclick="toggleCartDrawer()" class="text-cream hover:text-beige text-xl p-1">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <!-- Cart Body -->
+                <div class="flex-1 overflow-y-auto p-6 space-y-4" id="cartItemsList">
+                    <!-- Javascript populates cart items here -->
+                </div>
+
+                <!-- Cart Footer -->
+                <div class="p-6 bg-white border-t border-beige space-y-4 shadow-lg">
+                    <div class="space-y-2 text-xs text-darkText">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Subtotal:</span>
+                            <span font-bold id="cartSubtotal">₹0</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Estimated Shipping:</span>
+                            <span class="text-emerald-600 font-semibold" id="cartShipping">FREE</span>
+                        </div>
+                        <div class="flex justify-between text-base font-bold text-forest pt-2 border-t border-gray-100">
+                            <span>Total Amount:</span>
+                            <span id="cartTotal">₹0</span>
+                        </div>
+                    </div>
+
+                    <button onclick="openModal('checkoutModal'); toggleCartDrawer()" id="checkoutBtn" class="w-full bg-forest text-cream font-bold py-3.5 rounded-xl hover:bg-forest-dark transition-all text-sm shadow-md flex items-center justify-center gap-2">
+                        <span>Proceed to Demo Checkout</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button onclick="clearCart()" class="w-full text-xs text-red-600 hover:text-red-800 text-center block pt-1">
+                        Clear Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wishlist Drawer -->
+    <div id="wishlistDrawer" class="fixed inset-0 z-50 overflow-hidden hidden">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm transition-opacity" onclick="toggleWishlistDrawer()"></div>
+        <div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+            <div class="w-screen max-w-md bg-cream shadow-2xl flex flex-col">
+                <div class="p-6 bg-leaf text-white flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-heart text-xl"></i>
+                        <h3 class="font-serif text-lg font-bold">Saved Wishlist</h3>
+                    </div>
+                    <button onclick="toggleWishlistDrawer()" class="text-white hover:text-beige text-xl p-1">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div class="flex-1 overflow-y-auto p-6 space-y-4" id="wishlistItemsList">
+                    <!-- Wishlist items render here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Demo Checkout Modal -->
+    <div id="checkoutModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs hidden">
+        <div class="bg-white rounded-3xl max-w-xl w-full p-6 sm:p-8 max-h-[90vh] overflow-y-auto shadow-2xl border border-beige">
+            <div class="flex justify-between items-center pb-4 border-b border-gray-100">
+                <h3 class="font-serif text-xl font-bold text-forest">Demo Checkout</h3>
+                <button onclick="closeModal('checkoutModal')" class="text-gray-400 hover:text-gray-600 text-xl">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Demo Warning Banner -->
+            <div class="my-4 bg-amber-50 border border-amber-200 text-amber-800 p-3 rounded-xl text-xs flex items-center gap-2">
+                <i class="fa-solid fa-circle-info text-base text-amber-600"></i>
+                <span>This is a demonstration checkout. No real money will be charged or payment details requested.</span>
+            </div>
+
+            <form onsubmit="handleDemoOrder(event)" class="space-y-4">
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 mb-1">First Name</label>
+                        <input type="text" required placeholder="Aarav" class="w-full text-xs p-3 rounded-xl border border-beige focus:outline-none focus:border-forest">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 mb-1">Last Name</label>
+                        <input type="text" required placeholder="Sharma" class="w-full text-xs p-3 rounded-xl border border-beige focus:outline-none focus:border-forest">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 mb-1">Email Address</label>
+                    <input type="email" required placeholder="aarav@example.com" class="w-full text-xs p-3 rounded-xl border border-beige focus:outline-none focus:border-forest">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 mb-1">Delivery Address</label>
+                    <input type="text" required placeholder="Flat 402, Green Ridge Apartments, Bandra" class="w-full text-xs p-3 rounded-xl border border-beige focus:outline-none focus:border-forest">
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 mb-1">City</label>
+                        <input type="text" required placeholder="Mumbai" class="w-full text-xs p-3 rounded-xl border border-beige focus:outline-none focus:border-forest">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 mb-1">Pincode</label>
+                        <input type="text" required placeholder="400050" class="w-full text-xs p-3 rounded-xl border border-beige focus:outline-none focus:border-forest">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 mb-1">Payment Method (Demo Mode)</label>
+                    <select class="w-full text-xs p-3 rounded-xl border border-beige bg-white focus:outline-none focus:border-forest">
+                        <option>Cash on Delivery (Demo COD)</option>
+                        <option>UPI / QR Code (Demo)</option>
+                        <option>Credit / Debit Card (Demo)</option>
+                    </select>
+                </div>
+
+                <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+                    <div>
+                        <span class="text-xs text-gray-500">Total Payable:</span>
+                        <div font-bold text-lg text-forest id="checkoutModalTotal">₹0</div>
+                    </div>
+                    <button type="submit" class="bg-forest text-cream font-bold px-6 py-3 rounded-xl hover:bg-forest-dark transition-all text-sm shadow-md">
+                        Place Demo Order
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Quick View Product Modal -->
+    <div id="quickViewModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs hidden">
+        <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 max-h-[90vh] overflow-y-auto shadow-2xl relative border border-beige" id="quickViewContent">
+            <!-- Populated dynamically -->
+        </div>
+    </div>
+
+    <!-- Login / Register Modal -->
+    <div id="authModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs hidden">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative border border-beige">
+            <button onclick="closeModal('authModal')" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="text-center mb-6">
+                <h3 class="font-serif text-2xl font-bold text-forest">Welcome to BambooBliss</h3>
+                <p class="text-xs text-gray-500 mt-1">Login to view saved orders & reward points</p>
+            </div>
+            <form onsubmit="handleAuthDemo(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 mb-1">Email Address</label>
+                    <input type="email" required placeholder="you@example.com" class="w-full text-xs p-3 rounded-xl border border-beige focus:outline-none focus:border-forest">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 mb-1">Password</label>
+                    <input type="password" required placeholder="••••••••" class="w-full text-xs p-3 rounded-xl border border-beige focus:outline-none focus:border-forest">
+                </div>
+                <button type="submit" class="w-full bg-forest text-cream font-bold py-3 rounded-xl hover:bg-forest-dark transition-all text-sm shadow-md">
+                    Sign In / Register (Demo)
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Order Track Modal -->
+    <div id="orderTrackModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs hidden">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative border border-beige">
+            <button onclick="closeModal('orderTrackModal')" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 class="font-serif text-2xl font-bold text-forest mb-2">Track Your Order</h3>
+            <p class="text-xs text-gray-500 mb-4">Enter your demo Order ID (e.g. BLISS-9042) to check delivery status.</p>
+            <form onsubmit="handleTrackDemo(event)" class="space-y-3">
+                <input type="text" id="trackInput" required placeholder="BLISS-XXXX" class="w-full text-xs p-3 rounded-xl border border-beige uppercase">
+                <button type="submit" class="w-full bg-leaf text-white font-bold py-3 rounded-xl hover:bg-emerald-600 transition-all text-sm">
+                    Track Status
+                </button>
+            </form>
+            <div id="trackResult" class="mt-4 text-xs font-semibold text-forest hidden p-3 bg-beige-light rounded-xl"></div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        
+        // Products Database
+        const products = [
+            {
+                id: 1,
+                name: "Signature Insulated Bamboo Bottle",
+                category: "Insulated",
+                price: 899,
+                origPrice: 1299,
+                rating: 4.9,
+                reviewsCount: 142,
+                image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=600&auto=format&fit=crop",
+                capacity: "750 ml",
+                colors: ["Natural Bamboo", "Dark Walnut"],
+                description: "Double-walled vacuum insulated 304 stainless steel interior wrapped in organic real bamboo wood."
+            },
+            {
+                id: 2,
+                name: "Pure Natural Bamboo Flask",
+                category: "Water Bottles",
+                price: 699,
+                origPrice: 999,
+                rating: 4.7,
+                reviewsCount: 98,
+                image: "https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop",
+                capacity: "500 ml",
+                colors: ["Natural Grain"],
+                description: "Lightweight single-wall organic bamboo flask with leak-proof cap for daily office hydration."
+            },
+            {
+                id: 3,
+                name: "Glass Bottle with Bamboo Sleeve",
+                category: "Glass Covers",
+                price: 549,
+                origPrice: 799,
+                rating: 4.8,
+                reviewsCount: 110,
+                image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=600&auto=format&fit=crop",
+                capacity: "600 ml",
+                colors: ["Clear Glass", "Frosted Glass"],
+                description: "Borosilicate glass water bottle protected by a removable bamboo wood outer shell."
+            },
+            {
+                id: 4,
+                name: "Stainless Steel Bamboo Sports Bottle",
+                category: "Stainless Steel",
+                price: 799,
+                origPrice: 1099,
+                rating: 4.6,
+                reviewsCount: 76,
+                image: "https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=600&auto=format&fit=crop",
+                capacity: "1000 ml",
+                colors: ["Metallic Bamboo"],
+                description: "Heavy-duty 1 Litre gym and sports bottle featuring a solid bamboo handle cap."
+            },
+            {
+                id: 5,
+                name: "Junior Kids' Bamboo Water Bottle",
+                category: "Kids' Bamboo Bottles",
+                price: 499,
+                origPrice: 699,
+                rating: 4.9,
+                reviewsCount: 64,
+                image: "https://images.unsplash.com/photo-1570831739435-660143a4e5d3?q=80&w=600&auto=format&fit=crop",
+                capacity: "350 ml",
+                colors: ["Light Bamboo", "Forest Print"],
+                description: "Kid-friendly compact bamboo bottle with a soft silicone spout and straw lid."
+            },
+            {
+                id: 6,
+                name: "Traveler Bamboo Infuser Bottle",
+                category: "Bamboo Travel Bottles",
+                price: 949,
+                origPrice: 1399,
+                rating: 4.8,
+                reviewsCount: 185,
+                image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=600&auto=format&fit=crop",
+                capacity: "500 ml",
+                colors: ["Deep Bamboo"],
+                description: "Includes a 2-piece stainless steel tea strainer and fruit infuser basket."
+            },
+            {
+                id: 7,
+                name: "Personalized Laser-Engraved Bottle",
+                category: "Personalized",
+                price: 999,
+                origPrice: 1499,
+                rating: 5.0,
+                reviewsCount: 210,
+                image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=600&auto=format&fit=crop",
+                capacity: "750 ml",
+                colors: ["Custom Engraved"],
+                description: "Add your name, logo, or custom message laser engraved directly onto natural bamboo wood."
+            },
+            {
+                id: 8,
+                name: "Deluxe Eco Bamboo Bottle Gift Set",
+                category: "Gift Sets",
+                price: 1899,
+                origPrice: 2398,
+                rating: 4.9,
+                reviewsCount: 88,
+                image: "https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop",
+                capacity: "750 ml + Accessories",
+                colors: ["Gift Edition"],
+                description: "Complete eco box: Insulated Bottle, 2 Bamboo Straws, Coconut Brush & Sleeve."
+            }
+        ];
+
+        // Categories List (Section 3)
+        const categoriesList = [
+            { name: "Bamboo Water Bottles", icon: "fa-bottle-water", count: "12 Items", bgImg: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=300&auto=format&fit=crop" },
+            { name: "Stainless Steel Bamboo Bottles", icon: "fa-shield-halved", count: "8 Items", bgImg: "https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=300&auto=format&fit=crop" },
+            { name: "Glass Bottles with Bamboo Covers", icon: "fa-wine-glass", count: "6 Items", bgImg: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=300&auto=format&fit=crop" },
+            { name: "Insulated Bamboo Bottles", icon: "fa-temperature-low", count: "10 Items", bgImg: "https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=300&auto=format&fit=crop" },
+            { name: "Kids' Bamboo Bottles", icon: "fa-child-reaching", count: "5 Items", bgImg: "https://images.unsplash.com/photo-1570831739435-660143a4e5d3?q=80&w=300&auto=format&fit=crop" },
+            { name: "Bamboo Travel Bottles", icon: "fa-plane-departure", count: "9 Items", bgImg: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=300&auto=format&fit=crop" },
+            { name: "Personalized Bamboo Bottles", icon: "fa-pen-nib", count: "Custom", bgImg: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=300&auto=format&fit=crop" },
+            { name: "Bamboo Bottle Gift Sets", icon: "fa-gift", count: "4 Bundles", bgImg: "https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=300&auto=format&fit=crop" }
+        ];
+
+        // 15 Requested Accessories (Section 4)
+        const accessories = [
+            { id: 101, name: "Replacement Bamboo Lid", price: 199, desc: "Handcrafted natural bamboo cap with silicone ring.", img: "https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=300&auto=format&fit=crop" },
+            { id: 102, name: "Stainless Steel Cap", price: 249, desc: "Rust-proof 304 steel cap with sturdy loop.", img: "https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=300&auto=format&fit=crop" },
+            { id: 103, name: "Leak-Proof Silicone Seals (3 Pack)", price: 99, desc: "Food-grade silicone replacement gaskets.", img: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=300&auto=format&fit=crop" },
+            { id: 104, name: "Replacement Bamboo Straws (Set of 4)", price: 149, desc: "Re-usable organic bamboo drinking straws.", img: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=300&auto=format&fit=crop" },
+            { id: 105, name: "Coconut Bristle Cleaning Brush", price: 129, desc: "Natural coconut fiber brush for deep cleaning.", img: "https://images.unsplash.com/photo-1570831739435-660143a4e5d3?q=80&w=300&auto=format&fit=crop" },
+            { id: 106, name: "Cotton Canvas Carrying Bag", price: 229, desc: "Organic cotton drawstring tote pouch.", img: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=300&auto=format&fit=crop" },
+            { id: 107, name: "Neoprene Protective Sleeve", price: 179, desc: "Shockproof sleeve with thermal insulation.", img: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=300&auto=format&fit=crop" },
+            { id: 108, name: "Hands-Free Bottle Holder Sling", price: 299, desc: "Adjustable shoulder strap sling holder.", img: "https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=300&auto=format&fit=crop" },
+            { id: 109, name: "Paracord Carry Strap", price: 199, desc: "Heavy-duty braided survival cord handle.", img: "https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=300&auto=format&fit=crop" },
+            { id: 110, name: "Silicone Protective Base Cover", price: 119, desc: "Anti-slip bumper sleeve base protector.", img: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=300&auto=format&fit=crop" },
+            { id: 111, name: "Thermal Insulation Pouch", price: 249, desc: "Keep beverages cold up to 6 hours longer.", img: "https://images.unsplash.com/photo-1570831739435-660143a4e5d3?q=80&w=300&auto=format&fit=crop" },
+            { id: 112, name: "Eco Wooden Gift Box", price: 299, desc: "Crafted bamboo plywood decorative gift packaging.", img: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=300&auto=format&fit=crop" },
+            { id: 113, name: "Spare O-Ring Gaskets (5 Pack)", price: 89, desc: "Precision fit seals to prevent all leaks.", img: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=300&auto=format&fit=crop" },
+            { id: 114, name: "Bamboo Desk Bottle Stand", price: 349, desc: "Elegant wooden desk cradle for stable support.", img: "https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=300&auto=format&fit=crop" },
+            { id: 115, name: "Complete Bottle Cleaning Kit", price: 399, desc: "Includes bottle brush, straw cleaner, and eco drying rack.", img: "https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=300&auto=format&fit=crop" }
+        ];
+
+        let cart = JSON.parse(localStorage.getItem('bambooliss_cart')) || [];
+        let wishlist = JSON.parse(localStorage.getItem('bambooliss_wishlist')) || [];
+        let currentSlide = 0;
+        let slideInterval;
+
+        
+        // Render Categories
+        function renderCategories() {
+            const container = document.getElementById('categoriesGrid');
+            if (!container) return;
+            container.innerHTML = categoriesList.map((cat, idx) => `
+                <div onclick="filterProductsByCat('${cat.name}')" class="group cursor-pointer bg-white rounded-3xl overflow-hidden border border-beige/60 p-4 card-shadow transition-all duration-300 hover:-translate-y-1">
+                    <div class="h-32 rounded-2xl overflow-hidden relative mb-3 bg-beige-light">
+                        <img src="${cat.bgImg}" alt="${cat.name}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-forest/20 group-hover:bg-forest/10 transition-colors"></div>
+                        <div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-cream/90 text-forest flex items-center justify-center text-xs font-bold shadow">
+                            <i class="fa-solid ${cat.icon}"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-serif font-bold text-sm text-darkText group-hover:text-forest transition-colors leading-snug">${cat.name}</h3>
+                    <p class="text-[11px] text-gray-500 mt-1">${cat.count}</p>
+                </div>
+            `).join('');
+        }
+
+        // Render Products Catalog
+        function renderProducts(itemsToRender = products) {
+            const grid = document.getElementById('productsGrid');
+            if (!grid) return;
+
+            if (itemsToRender.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full py-12 text-center">
+                        <i class="fa-solid fa-bottle-water text-4xl text-gray-300 mb-3"></i>
+                        <p class="text-gray-500 text-sm font-medium">No matching bamboo bottles found.</p>
+                        <button onclick="filterProducts('all')" class="mt-3 text-xs bg-forest text-cream px-4 py-2 rounded-full">Reset Filter</button>
+                    </div>
+                `;
+                return;
+            }
+
+            grid.innerHTML = itemsToRender.map(product => {
+                const isWishlisted = wishlist.includes(product.id);
+                return `
+                <div class="bg-white rounded-3xl overflow-hidden border border-beige/60 card-shadow flex flex-col justify-between group transition-all duration-300 hover:-translate-y-1 relative">
+                    <!-- Wishlist Button -->
+                    <button onclick="toggleWishlist(${product.id})" class="absolute top-4 right-4 z-10 w-9 h-9 rounded-full ${isWishlisted ? 'bg-red-50 text-red-500' : 'bg-white/80 text-gray-400 hover:text-red-500'} flex items-center justify-center shadow-md backdrop-blur-xs transition-colors">
+                        <i class="${isWishlisted ? 'fa-solid' : 'fa-regular'} fa-heart text-sm"></i>
+                    </button>
+
+                    <!-- Discount Badge -->
+                    <div class="absolute top-4 left-4 z-10 bg-forest text-cream font-extrabold text-[10px] px-2.5 py-1 rounded-full shadow uppercase tracking-wider">
+                        ${Math.round(((product.origPrice - product.price) / product.origPrice) * 100)}% OFF
+                    </div>
+
+                    <!-- Image Header -->
+                    <div class="h-56 bg-beige-light/50 overflow-hidden relative cursor-pointer" onclick="openQuickView(${product.id})">
+                        <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="bg-cream text-forest font-bold text-xs px-4 py-2 rounded-full shadow-lg">Quick View</span>
+                        </div>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-gray-500 mb-1">
+                                <span class="bg-beige-light text-forest font-semibold px-2 py-0.5 rounded-md">${product.category}</span>
+                                <div class="flex items-center gap-1 text-amber-500">
+                                    <i class="fa-solid fa-star text-xs"></i>
+                                    <span class="font-bold text-darkText">${product.rating}</span>
+                                    <span class="text-gray-400">(${product.reviewsCount})</span>
+                                </div>
+                            </div>
+
+                            <h3 onclick="openQuickView(${product.id})" class="font-serif font-bold text-base text-darkText group-hover:text-forest transition-colors cursor-pointer line-clamp-1">
+                                ${product.name}
+                            </h3>
+
+                            <p class="text-xs text-gray-500 line-clamp-2 mt-1 leading-relaxed">
+                                ${product.description}
+                            </p>
+
+                            <div class="flex items-center gap-2 mt-2 text-[11px] text-gray-600">
+                                <span><i class="fa-solid fa-arrows-up-down text-leaf mr-1"></i>${product.capacity}</span>
+                                <span>•</span>
+                                <span><i class="fa-solid fa-palette text-leaf mr-1"></i>${product.colors[0]}</span>
+                            </div>
+                        </div>
+
+                        <!-- Price & Actions -->
+                        <div class="pt-2 border-t border-gray-100">
+                            <div class="flex items-baseline gap-2 mb-3">
+                                <span class="text-xl font-bold text-forest">₹${product.price}</span>
+                                <span class="text-xs line-through text-gray-400">₹${product.origPrice}</span>
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-2">
+                                <button onclick="addToCart(${product.id})" class="bg-forest/10 hover:bg-forest text-forest hover:text-white font-bold py-2.5 rounded-xl transition-all text-xs flex items-center justify-center gap-1.5">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <span>Add to Cart</span>
+                                </button>
+                                <button onclick="buyNow(${product.id})" class="bg-forest text-cream hover:bg-forest-dark font-bold py-2.5 rounded-xl transition-all text-xs shadow-sm">
+                                    Buy Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                `;
+            }).join('');
+        }
+
+        // Render Accessories Catalog
+        function renderAccessories() {
+            const grid = document.getElementById('accessoriesGrid');
+            if (!grid) return;
+
+            grid.innerHTML = accessories.map(acc => `
+                <div class="bg-white rounded-2xl border border-beige/60 p-4 card-shadow flex flex-col justify-between hover:border-forest/40 transition-all">
+                    <div>
+                        <div class="h-32 rounded-xl overflow-hidden mb-3 bg-beige-light">
+                            <img src="${acc.img}" alt="${acc.name}" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <h4 class="font-serif font-bold text-sm text-darkText leading-snug">${acc.name}</h4>
+                        <p class="text-[11px] text-gray-500 mt-1 line-clamp-2">${acc.desc}</p>
+                    </div>
+
+                    <div class="mt-4 pt-2 border-t border-gray-100 flex items-center justify-between">
+                        <span class="font-bold text-forest text-sm">₹${acc.price}</span>
+                        <button onclick="addAccessoryToCart(${acc.id})" class="bg-leaf hover:bg-emerald-600 text-white p-2 rounded-lg text-xs transition-colors shadow-xs" title="Add Accessory">
+                            <i class="fa-solid fa-plus mr-1"></i> Add
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function filterProducts(category) {
+            // Update active tab buttons
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('bg-forest', 'text-cream');
+                btn.classList.add('bg-white', 'text-darkText');
+            });
+            event?.target?.classList.remove('bg-white', 'text-darkText');
+            event?.target?.classList.add('bg-forest', 'text-cream');
+
+            if (category === 'all') {
+                renderProducts(products);
+            } else {
+                const filtered = products.filter(p => p.category.toLowerCase().includes(category.toLowerCase()));
+                renderProducts(filtered);
+            }
+        }
+
+        function filterProductsByCat(catName) {
+            window.location.href = '#products';
+            const cleanCat = catName.split(' ')[0];
+            const filtered = products.filter(p => p.category.toLowerCase().includes(cleanCat.toLowerCase()) || p.name.toLowerCase().includes(cleanCat.toLowerCase()));
+            renderProducts(filtered.length ? filtered : products);
+        }
+
+        function handleSearch() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            const resultsBox = document.getElementById('searchResults');
+            
+            if (!query) {
+                resultsBox.classList.add('hidden');
+                return;
+            }
+
+            const matches = products.filter(p => p.name.toLowerCase().includes(query) || p.category.toLowerCase().includes(query))
+                .concat(accessories.filter(a => a.name.toLowerCase().includes(query)));
+
+            if (matches.length === 0) {
+                resultsBox.innerHTML = `<div class="p-4 text-xs text-gray-500 text-center">No results found for "${query}"</div>`;
+            } else {
+                resultsBox.innerHTML = matches.slice(0, 5).map(m => `
+                    <div onclick="selectSearchResult('${m.name}')" class="p-3 hover:bg-beige-light border-b border-gray-100 flex items-center justify-between cursor-pointer">
+                        <div class="flex items-center gap-3">
+                            <img src="${m.image || m.img}" class="w-10 h-10 object-cover rounded-lg">
+                            <div>
+                                <h5 class="text-xs font-bold text-darkText">${m.name}</h5>
+                                <span class="text-[10px] text-gray-500">₹${m.price}</span>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-right text-xs text-forest"></i>
+                    </div>
+                `).join('');
+            }
+            resultsBox.classList.remove('hidden');
+        }
+
+        function handleMobileSearch() {
+            const query = document.getElementById('mobileSearchInput').value.toLowerCase().trim();
+            const resultsBox = document.getElementById('mobileSearchResults');
+            if (!query) {
+                resultsBox.classList.add('hidden');
+                return;
+            }
+            const matches = products.filter(p => p.name.toLowerCase().includes(query));
+            if (matches.length === 0) {
+                resultsBox.innerHTML = `<div class="p-3 text-xs text-gray-500">No products found</div>`;
+            } else {
+                resultsBox.innerHTML = matches.map(m => `
+                    <div onclick="selectSearchResult('${m.name}')" class="p-2 border-b text-xs font-bold text-forest cursor-pointer">
+                        ${m.name} - ₹${m.price}
+                    </div>
+                `).join('');
+            }
+            resultsBox.classList.remove('hidden');
+        }
+
+        function selectSearchResult(name) {
+            document.getElementById('searchResults').classList.add('hidden');
+            document.getElementById('mobileSearchResults').classList.add('hidden');
+            window.location.href = '#products';
+            const matched = products.filter(p => p.name.toLowerCase().includes(name.toLowerCase()));
+            renderProducts(matched.length ? matched : products);
+        }
+
+        function addToCart(productId) {
+            const item = products.find(p => p.id === productId);
+            if (!item) return;
+
+            const existing = cart.find(c => c.id === productId);
+            if (existing) {
+                existing.quantity += 1;
+            } else {
+                cart.push({ ...item, quantity: 1, type: 'product' });
+            }
+
+            saveAndUpdateCart();
+            showToast(`Added "${item.name}" to cart!`);
+        }
+
+        function addAccessoryToCart(accId) {
+            const item = accessories.find(a => a.id === accId);
+            if (!item) return;
+
+            const existing = cart.find(c => c.id === accId);
+            if (existing) {
+                existing.quantity += 1;
+            } else {
+                cart.push({ id: item.id, name: item.name, price: item.price, image: item.img, quantity: 1, type: 'accessory' });
+            }
+
+            saveAndUpdateCart();
+            showToast(`Added accessory "${item.name}" to cart!`);
+        }
+
+        function quickAddToCart(productId) {
+            addToCart(productId);
+            toggleCartDrawer();
+        }
+
+        function buyNow(productId) {
+            addToCart(productId);
+            openModal('checkoutModal');
+        }
+
+        function updateCartQuantity(id, delta) {
+            const item = cart.find(c => c.id === id);
+            if (!item) return;
+
+            item.quantity += delta;
+            if (item.quantity <= 0) {
+                cart = cart.filter(c => c.id !== id);
+            }
+            saveAndUpdateCart();
+        }
+
+        function removeFromCart(id) {
+            cart = cart.filter(c => c.id !== id);
+            saveAndUpdateCart();
+            showToast('Item removed from cart');
+        }
+
+        function clearCart() {
+            cart = [];
+            saveAndUpdateCart();
+            showToast('Cart cleared');
+        }
+
+        function saveAndUpdateCart() {
+            localStorage.setItem('bambooliss_cart', JSON.stringify(cart));
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const counter = document.getElementById('cartCounter');
+            const drawerCounter = document.getElementById('cartDrawerCount');
+            const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+
+            if (counter) counter.innerText = totalCount;
+            if (drawerCounter) drawerCounter.innerText = `${totalCount} item${totalCount === 1 ? '' : 's'}`;
+
+            const list = document.getElementById('cartItemsList');
+            const subtotalEl = document.getElementById('cartSubtotal');
+            const totalEl = document.getElementById('cartTotal');
+            const modalTotalEl = document.getElementById('checkoutModalTotal');
+
+            if (!list) return;
+
+            if (cart.length === 0) {
+                list.innerHTML = `
+                    <div class="h-full flex flex-col items-center justify-center text-center py-16 space-y-3">
+                        <div class="w-16 h-16 rounded-full bg-forest/10 text-forest flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </div>
+                        <h4 class="font-serif font-bold text-lg text-darkText">Your cart is empty</h4>
+                        <p class="text-xs text-gray-500 max-w-xs">Looks like you haven't added any eco bamboo bottles or accessories yet.</p>
+                        <button onclick="toggleCartDrawer()" class="mt-2 bg-forest text-cream font-bold px-6 py-2.5 rounded-full text-xs">
+                            Start Shopping
+                        </button>
+                    </div>
+                `;
+                if (subtotalEl) subtotalEl.innerText = '₹0';
+                if (totalEl) totalEl.innerText = '₹0';
+                if (modalTotalEl) modalTotalEl.innerText = '₹0';
+                return;
+            }
+
+            const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+
+            list.innerHTML = cart.map(item => `
+                <div class="flex items-center gap-3 p-3 bg-white rounded-2xl border border-beige shadow-xs">
+                    <img src="${item.image}" alt="${item.name}" class="w-16 h-16 object-cover rounded-xl bg-beige-light">
+                    <div class="flex-1">
+                        <h5 class="font-serif font-bold text-xs text-darkText line-clamp-1">${item.name}</h5>
+                        <span class="text-xs font-bold text-forest">₹${item.price}</span>
+                        <div class="flex items-center gap-2 mt-2">
+                            <div class="flex items-center border border-beige rounded-lg overflow-hidden bg-cream">
+                                <button onclick="updateCartQuantity(${item.id}, -1)" class="px-2 py-0.5 text-xs hover:bg-beige">-</button>
+                                <span class="px-2 text-xs font-bold">${item.quantity}</span>
+                                <button onclick="updateCartQuantity(${item.id}, 1)" class="px-2 py-0.5 text-xs hover:bg-beige">+</button>
+                            </div>
+                            <button onclick="removeFromCart(${item.id})" class="text-[11px] text-red-500 hover:text-red-700 ml-auto">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            if (subtotalEl) subtotalEl.innerText = `₹${subtotal}`;
+            if (totalEl) totalEl.innerText = `₹${subtotal}`;
+            if (modalTotalEl) modalTotalEl.innerText = `₹${subtotal}`;
+        }
+
+        function toggleWishlist(productId) {
+            if (wishlist.includes(productId)) {
+                wishlist = wishlist.filter(id => id !== productId);
+                showToast('Removed from Wishlist');
+            } else {
+                wishlist.push(productId);
+                showToast('Saved to Wishlist!');
+            }
+            localStorage.setItem('bambooliss_wishlist', JSON.stringify(wishlist));
+            updateWishlistUI();
+            renderProducts();
+        }
+
+        function updateWishlistUI() {
+            const countEl = document.getElementById('wishlistCount');
+            if (countEl) countEl.innerText = wishlist.length;
+
+            const list = document.getElementById('wishlistItemsList');
+            if (!list) return;
+
+            if (wishlist.length === 0) {
+                list.innerHTML = `
+                    <div class="text-center py-12 text-gray-500 text-xs">
+                        <i class="fa-regular fa-heart text-3xl text-gray-300 mb-2 block"></i>
+                        No items saved to wishlist yet.
+                    </div>
+                `;
+                return;
+            }
+
+            const savedItems = products.filter(p => wishlist.includes(p.id));
+            list.innerHTML = savedItems.map(item => `
+                <div class="flex items-center justify-between p-3 bg-white rounded-2xl border border-beige">
+                    <div class="flex items-center gap-3">
+                        <img src="${item.image}" class="w-12 h-12 object-cover rounded-xl">
+                        <div>
+                            <h5 class="font-bold text-xs text-darkText">${item.name}</h5>
+                            <span class="text-xs text-forest font-bold">₹${item.price}</span>
+                        </div>
+                    </div>
+                    <button onclick="addToCart(${item.id}); toggleWishlist(${item.id})" class="bg-forest text-cream text-xs px-3 py-1.5 rounded-xl">
+                        Move to Cart
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        function initSlider() {
+            const slides = document.querySelectorAll('.slide-item');
+            const dots = document.querySelectorAll('#sliderDots button');
+            if (!slides.length) return;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle('active', i === index);
+                });
+                dots.forEach((dot, i) => {
+                    dot.className = i === index ? 'w-8 h-2 rounded-full bg-white transition-all' : 'w-2.5 h-2 rounded-full bg-white/50 hover:bg-white transition-all';
+                });
+                currentSlide = index;
+            }
+
+            window.nextSlide = function() {
+                let next = (currentSlide + 1) % slides.length;
+                showSlide(next);
+            };
+
+            window.prevSlide = function() {
+                let prev = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(prev);
+            };
+
+            window.goToSlide = function(index) {
+                showSlide(index);
+            };
+
+            // Auto advance
+            slideInterval = setInterval(nextSlide, 5000);
+
+            // Pause on hover
+            const sliderBox = document.querySelector('#home .relative');
+            if (sliderBox) {
+                sliderBox.addEventListener('mouseenter', () => clearInterval(slideInterval));
+                sliderBox.addEventListener('mouseleave', () => slideInterval = setInterval(nextSlide, 5000));
+            }
+        }
+
+        function toggleCartDrawer() {
+            const drawer = document.getElementById('cartDrawer');
+            drawer.classList.toggle('hidden');
+        }
+
+        function toggleWishlistDrawer() {
+            const drawer = document.getElementById('wishlistDrawer');
+            drawer.classList.toggle('hidden');
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) modal.classList.remove('hidden');
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) modal.classList.add('hidden');
+        }
+
+        function openQuickView(productId) {
+            const p = products.find(prod => prod.id === productId);
+            if (!p) return;
+
+            const container = document.getElementById('quickViewContent');
+            container.innerHTML = `
+                <button onclick="closeModal('quickViewModal')" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 text-xl z-10">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    <div class="h-64 sm:h-80 rounded-2xl overflow-hidden bg-beige-light">
+                        <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover">
+                    </div>
+                    <div class="space-y-4">
+                        <span class="bg-beige-light text-forest font-semibold text-xs px-2.5 py-1 rounded-md">${p.category}</span>
+                        <h3 class="font-serif text-2xl font-bold text-darkText">${p.name}</h3>
+                        <div class="flex items-center gap-2">
+                            <span class="text-2xl font-bold text-forest">₹${p.price}</span>
+                            <span class="text-sm line-through text-gray-400">₹${p.origPrice}</span>
+                        </div>
+                        <p class="text-xs text-gray-600 leading-relaxed">${p.description}</p>
+                        <div class="text-xs space-y-1 text-gray-700">
+                            <p><strong>Capacity:</strong> ${p.capacity}</p>
+                            <p><strong>Colors:</strong> ${p.colors.join(', ')}</p>
+                        </div>
+                        <button onclick="addToCart(${p.id}); closeModal('quickViewModal')" class="w-full bg-forest text-cream font-bold py-3 rounded-xl hover:bg-forest-dark transition-all text-sm shadow-md">
+                            Add to Cart - ₹${p.price}
+                        </button>
+                    </div>
+                </div>
+            `;
+            openModal('quickViewModal');
+        }
+
+        function showToast(message) {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = 'toast-animate bg-forest text-cream px-4 py-3 rounded-2xl shadow-xl border border-beige/40 flex items-center gap-3 text-xs font-semibold pointer-events-auto';
+            toast.innerHTML = `
+                <i class="fa-solid fa-circle-check text-leaf text-base"></i>
+                <span>${message}</span>
+            `;
+            container.appendChild(toast);
+            setTimeout(() => {
+                toast.remove();
+            }, 3000);
+        }
+
+        function handleNewsletter(e) {
+            e.preventDefault();
+            const email = document.getElementById('newsletterEmail').value;
+            const msg = document.getElementById('newsletterMessage');
+            msg.innerText = `Thank you! Coupon code WELCOME10 has been sent to ${email}.`;
+            msg.classList.remove('hidden');
+            document.getElementById('newsletterForm').reset();
+        }
+
+        function handleDemoOrder(e) {
+            e.preventDefault();
+            const orderId = 'BLISS-' + Math.floor(1000 + Math.random() * 9000);
+            closeModal('checkoutModal');
+            cart = [];
+            saveAndUpdateCart();
+            alert(`🎉 Success! Demo Order #${orderId} has been placed successfully!\n\nThank you for choosing eco-friendly hydration with BambooBliss.`);
+        }
+
+        function handleAuthDemo(e) {
+            e.preventDefault();
+            closeModal('authModal');
+            showToast('Welcome back! Demo login successful.');
+        }
+
+        function handleTrackDemo(e) {
+            e.preventDefault();
+            const res = document.getElementById('trackResult');
+            const input = document.getElementById('trackInput').value.toUpperCase();
+            res.innerHTML = `📦 Status for <strong>${input}</strong>: Out for delivery via EcoExpress. Expected arrival today by 5:00 PM.`;
+            res.classList.remove('hidden');
+        }
+
+        function applyOffer(code) {
+            showToast(`Promo code ${code} applied to your account!`);
+        }
+
+        window.onload = function () {
+            renderCategories();
+            renderProducts();
+            renderAccessories();
+            updateCartUI();
+            updateWishlistUI();
+            initSlider();
+        };
+    </script>
+</body>
+</html>
